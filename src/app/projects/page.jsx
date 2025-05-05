@@ -1,14 +1,20 @@
 // src/app/projects/page.jsx
 import React from "react";
+import MobileMenuToggle from "../../components/MobileMenuToggle";
 
 export default function Projects() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      {/* Header - same as homepage for consistency */}
+      {/* Responsive Header */}
       <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="logo text-xl font-bold">Maxwell Miya</div>
-          <nav>
+          
+          {/* Mobile Menu Toggle Button - Client Component */}
+          <MobileMenuToggle />
+          
+          {/* Desktop Navigation - Hidden on small screens */}
+          <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <li><a href="/" className="hover:text-blue-400 transition-colors">Home</a></li>
               <li><a href="/about" className="hover:text-blue-400 transition-colors">Resume</a></li>
@@ -18,10 +24,23 @@ export default function Projects() {
             </ul>
           </nav>
         </div>
+        
+        {/* Mobile Navigation Menu - Hidden by default, controlled by MobileMenuToggle */}
+        <div id="mobile-menu" className="hidden md:hidden">
+          <nav className="px-4 pt-2 pb-4 bg-gray-800">
+            <ul className="space-y-2">
+              <li><a href="/" className="block py-2 hover:text-blue-400 transition-colors">Home</a></li>
+              <li><a href="/about" className="block py-2 hover:text-blue-400 transition-colors">Resume</a></li>
+              <li><a href="/it-playbook" className="block py-2 hover:text-blue-400 transition-colors">Playbook</a></li>
+              <li><a href="/projects" className="block py-2 text-blue-400 transition-colors">Projects</a></li>
+              <li><a href="/contact" className="block py-2 hover:text-blue-400 transition-colors">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
-      {/* Projects Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      {/* Projects Hero Section - Add padding-top to prevent content from being hidden under the fixed header */}
+      <section className="relative pt-24 py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#grid-pattern)" />

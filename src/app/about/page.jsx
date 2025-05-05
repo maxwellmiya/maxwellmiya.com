@@ -4,7 +4,22 @@ import { Briefcase, Rocket, Code, Lightbulb, GraduationCap } from 'lucide-react'
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
+  // Close menu when screen size changes from mobile to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   // Timeline data with refined descriptions
   const timelineData = [
     { 
@@ -120,11 +135,30 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
-      {/* Header/Navigation */}
+      {/* Header/Navigation - Now with responsive design */}
       <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="text-xl font-bold">Maxwell Miya</div>
-          <nav>
+          
+          {/* Mobile Menu Button - only visible on mobile */}
+          <button 
+            className="md:hidden focus:outline-none" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
+          </button>
+          
+          {/* Desktop Navigation - hidden on mobile */}
+          <nav className="hidden md:block">
             <ul className="flex space-x-6 text-sm">
               <li><a href="/" className="hover:text-blue-400 transition-colors">Home</a></li>
               <li><a href="/about" className="hover:text-blue-400 transition-colors">Resume</a></li>
@@ -134,6 +168,61 @@ export default function Home() {
             </ul>
           </nav>
         </div>
+        
+        {/* Mobile Navigation Menu - conditionally rendered */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-gray-800 shadow-lg">
+            <nav className="container mx-auto px-4 py-3">
+              <ul className="flex flex-col space-y-3">
+                <li>
+                  <a 
+                    href="/" 
+                    className="block py-2 px-4 hover:bg-gray-700 rounded transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/about" 
+                    className="block py-2 px-4 hover:bg-gray-700 rounded transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Resume
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/it-playbook" 
+                    className="block py-2 px-4 hover:bg-gray-700 rounded transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Playbook
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/projects" 
+                    className="block py-2 px-4 hover:bg-gray-700 rounded transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/contact" 
+                    className="block py-2 px-4 hover:bg-gray-700 rounded transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero Section with modern gradient background */}

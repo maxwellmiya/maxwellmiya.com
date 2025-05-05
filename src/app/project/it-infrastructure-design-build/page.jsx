@@ -10,11 +10,9 @@ export default function ITInfrastructureBuild() {
           <div className="text-xl font-bold">Maxwell Miya</div>
           <nav>
             <ul className="flex space-x-6 text-sm">
-              <li><a href="/" className="hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="/about" className="hover:text-blue-400 transition-colors">Resume</a></li>
-              <li><a href="/it-playbook" className="hover:text-blue-400 transition-colors">Playbook</a></li>
+              
               <li><a href="/projects" className="hover:text-blue-400 transition-colors">Projects</a></li>
-              <li><a href="/contact" className="text-blue-400 transition-colors">Contact</a></li>
+              
             </ul>
           </nav>
         </div>

@@ -1,17 +1,56 @@
-// src/app/page.jsx
 "use client";
-import React from "react";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import React, { useState } from "react";
+import { Analytics } from "../../vercel/analytics/react";
+import { SpeedInsights } from "../../vercel/speed-insights/next";
 
 export default function Home() {
+  // Add state for mobile menu
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Function to toggle mobile menu
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      {/* Header Section */}
+      {/* Header Section - Now with responsive design */}
       <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="logo text-xl font-bold">Maxwell Miya</div>
-          <nav>
+          
+          {/* Mobile menu button - only visible on small screens */}
+          <button 
+            className="md:hidden flex items-center text-white focus:outline-none" 
+            onClick={toggleMobileMenu}
+            aria-label="Toggle navigation menu"
+          >
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              {mobileMenuOpen ? (
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+          
+          {/* Desktop navigation - hidden on small screens */}
+          <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <li><a href="/" className="hover:text-blue-400 transition-colors">Home</a></li>
               <li><a href="/about" className="hover:text-blue-400 transition-colors">Resume</a></li>
@@ -21,8 +60,24 @@ export default function Home() {
             </ul>
           </nav>
         </div>
+        
+        {/* Mobile navigation - only appears when menu is open */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-gray-800 shadow-lg py-4">
+            <nav className="container mx-auto px-4">
+              <ul className="flex flex-col space-y-3">
+                <li><a href="/" className="block hover:text-blue-400 transition-colors py-1">Home</a></li>
+                <li><a href="/about" className="block hover:text-blue-400 transition-colors py-1">Resume</a></li>
+                <li><a href="/it-playbook" className="block hover:text-blue-400 transition-colors py-1">Playbook</a></li>
+                <li><a href="/projects" className="block hover:text-blue-400 transition-colors py-1">Projects</a></li>
+                <li><a href="/contact" className="block hover:text-blue-400 transition-colors py-1">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        )}
       </header>
 
+      {/* Rest of your page content remains the same */}
       {/* Hero Section */}
       <section className="relative h-screen flex items-center text-white pt-16">
         {/* Video Background */}
