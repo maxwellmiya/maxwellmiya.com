@@ -94,7 +94,7 @@ export default function Projects() {
             {
               title: "Microsoft Intune Deployment for Endpoint Security & Compliance",
               description: "Implementation of Microsoft Intune for centralized device management and security enforcement across the organization, ensuring compliance with industry standards while enabling secure remote work capabilities.",
-              image: "/images/MS intune.webp",
+              image: "/images/MS Intune.webp",
               tags: ["Security", "Intune", "Compliance", "Endpoint Management"],
               impact: "100% compliance, 85% reduction in security incidents",
               caseStudyLink: "/project/intune-endpoint-security"
