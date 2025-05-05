@@ -310,14 +310,14 @@ export default function EnterpriseSecurityUpgrade() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
             {[
-              { name: "FortiGate NGFW", icon: "/images/fortinet_logo.jpeg" },
+              { name: "FortiGate NGFW", icon: "/images/fortinet_logo.png" },
               { name: "Sophos XG", icon: "/images/sophos.png" },
               { name: "SIEM Integration", icon: "/images/siem.png" },
               { name: "IPSec/SSL VPN", icon: "/images/vpn.png" },
               { name: "Threat Intelligence", icon: "/images/ti.png" },
-              { name: "Network Segmentation", icon: "/images/vlns.png" },
-              { name: "Unified Threat Management (UTM)", icon: "/images/activedirectory.png" },
-              { name: "TCP/IP Networking", icon: "/images/asr.png" },
+              { name: "Network Segmentation", icon: "/images/vlns.svg" },
+              { name: "Unified Threat Management (UTM)", icon: "/images/utm.png" },
+              { name: "TCP/IP Networking", icon: "/images/tcp.png" },
               
             ].map((tech, index) => (
               <div key={index} className="flex flex-col items-center group">

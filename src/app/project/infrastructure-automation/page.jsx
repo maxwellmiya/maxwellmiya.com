@@ -310,8 +310,8 @@ export default function InfrastructureAutomation() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
             {[
               { name: "PowerShell", icon: "/images/powershell.png" },
-              { name: "Ansible", icon: "/images/ansible.png" },
-              { name: "Power Automate", icon: "/images/pa.png" },
+              { name: "Ansible", icon: "/images/ansible-icon.png" },
+              { name: "Power Automate", icon: "/images/power-automate-icon.png" },
               { name: "Git", icon: "/images/git.png" },
               { name: "Windows Admin Center", icon: "/images/wic.png" },
               { name: "REST APIs", icon: "/images/pi.png" },

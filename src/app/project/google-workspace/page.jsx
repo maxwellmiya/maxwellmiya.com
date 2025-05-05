@@ -290,13 +290,13 @@ export default function GoogleWorkspaceImplementation() {
               { name: "Google Workspace", icon: "/images/google-workspace.png" },
               { name: "Gmail", icon: "/images/gmail.png" },
               { name: "Google Drive", icon: "/images/google-drive.png" },
-              { name: "Google Meet", icon: "/images/google-meet.png" },
+              { name: "Google Meet", icon: "/images/google-meet.jpg" },
               { name: "Google Chat", icon: "/images/google-chat.png" },
               { name: "Admin Console", icon: "/images/google-admin.png" },
               { name: "2-Step Verification", icon: "/images/mfa.png" },
               { name: "Mobile Device Mgmt", icon: "/images/mdm.png" },
-              { name: "DNS Configuration", icon: "/images/dns.png" },
-              { name: "User Management", icon: "/images/user-management.png" },
+              { name: "DNS Configuration", icon: "/images/dns.jpg" },
+              { name: "User Management", icon: "/images/user-management.svg" },
             ].map((tech, index) => (
               <div key={index} className="flex flex-col items-center group">
                 <div className="bg-white p-5 rounded-2xl shadow-md mb-4 group-hover:shadow-lg transition-shadow duration-300">

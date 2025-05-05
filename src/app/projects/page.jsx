@@ -261,7 +261,7 @@ export default function Projects() {
                 </svg>
               ),
               category: "Security Architecture",
-              projectLink: "/project/intune-security-compliance"
+              projectLink: "/project/intune-endpoint-security"
             },
             {
               title: "On-Premise to Azure & Microsoft 365 Cloud Migration",

@@ -287,16 +287,16 @@ export default function ITInfrastructureBuild() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
             {[
-              { name: "HP ProLiant", icon: "/images/hp-proliant.png" },
+              { name: "HP ProLiant", icon: "/images/hp.svg" },
               { name: "VMware vSphere", icon: "/images/vmware.png" },
-              { name: "Windows Server", icon: "/images/windows-server.png" },
-              { name: "Active Directory", icon: "/images/active-directory.png" },
+              { name: "Windows Server", icon: "/images/windowsserver.png" },
+              { name: "Active Directory", icon: "/images/activedirectory.png" },
               { name: "SAN Storage", icon: "/images/san.png" },
-              { name: "Veeam Backup", icon: "/images/veeam.png" },
-              { name: "Network Switches", icon: "/images/network-switch.png" },
-              { name: "Cat6 Cabling", icon: "/images/cabling.png" },
+              { name: "Veeam Backup", icon: "/images/veeam.svg" },
+              { name: "Network Switches", icon: "/images/network-switch.jpg" },
+              { name: "Cat6 Cabling", icon: "/images/cabling.jpg" },
               { name: "Sophos XG", icon: "/images/sophos.png" },
-              { name: "DNS/DHCP", icon: "/images/dns.png" },
+              { name: "DNS/DHCP", icon: "/images/dns.jpg" },
             ].map((tech, index) => (
               <div key={index} className="flex flex-col items-center group">
                 <div className="bg-white p-5 rounded-2xl shadow-md mb-4 group-hover:shadow-lg transition-shadow duration-300">

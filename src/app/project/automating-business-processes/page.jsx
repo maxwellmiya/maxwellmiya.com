@@ -287,14 +287,14 @@ export default function AutomatingBusinessProcesses() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
             {[
               { name: "SharePoint Online", icon: "/images/sharepoint.png" },
-              { name: "Power Automate", icon: "/images/power-automate.png" },
+              { name: "Power Automate", icon: "/images/power-automate-icon.png" },
               { name: "Microsoft 365", icon: "/images/microsoft365.png" },
-              { name: "Microsoft Teams", icon: "/images/teams.png" },
-              { name: "Microsoft Forms", icon: "/images/forms.png" },
+              { name: "Microsoft Teams", icon: "/images/teams-icon.png" },
+              { name: "Microsoft Forms", icon: "/images/forms-icon.png" },
               { name: "Power Apps", icon: "/images/power-apps.png" },
               { name: "Azure AD", icon: "/images/activedirectory.png" },
               { name: "UX Design", icon: "/images/ux-design.png" },
-              { name: "Workflow Logic", icon: "/images/workflow.png" },
+              { name: "Workflow Logic", icon: "/images/workflow.jpg" },
               { name: "Data Modeling", icon: "/images/data-model.png" },
             ].map((tech, index) => (
               <div key={index} className="flex flex-col items-center group">

@@ -287,16 +287,16 @@ export default function InfrastructureRefresh() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
             {[
-              { name: "HP ProLiant", icon: "/images/hp-proliant.png" },
-              { name: "Dell PowerEdge", icon: "/images/dell-poweredge.png" },
-              { name: "Windows Server", icon: "/images/windows-server.png" },
+              { name: "HP ProLiant", icon: "/images/hp.svg" },
+              { name: "Dell PowerEdge", icon: "/images/dell.png" },
+              { name: "Windows Server", icon: "/images/windowsserver.png" },
               { name: "Windows 10/11", icon: "/images/windows.png" },
-              { name: "HP Laptops", icon: "/images/hp-laptop.png" },
-              { name: "Dell Desktops", icon: "/images/dell-desktop.png" },
+              { name: "HP Laptops", icon: "/images/hp.svg" },
+              { name: "Dell Desktops", icon: "/images/dell.png" },
               { name: "Lenovo", icon: "/images/lenovo.png" },
-              { name: "Network Switches", icon: "/images/network-switch.png" },
+              { name: "Network Switches", icon: "/images/network-switch.jpg" },
               { name: "QNAP NAS", icon: "/images/san.png" },
-              { name: "Active Directory", icon: "/images/active-directory.png" },
+              { name: "Active Directory", icon: "/images/activedirectory.png" },
             ].map((tech, index) => (
               <div key={index} className="flex flex-col items-center group">
                 <div className="bg-white p-5 rounded-2xl shadow-md mb-4 group-hover:shadow-lg transition-shadow duration-300">
