@@ -18,7 +18,6 @@ export default function SharepointIntranetWorkflows() {
         </div>
       </header>
 
-
       {/* Hero Banner with Image Background */}
       <section className="relative h-[500px]">
         <div className="absolute inset-0 bg-black/50 z-10"></div>

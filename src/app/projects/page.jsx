@@ -2,6 +2,7 @@
 import React from "react";
 import MobileMenuToggle from "../../components/MobileMenuToggle";
 
+
 export default function Projects() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
