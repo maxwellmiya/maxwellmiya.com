@@ -1,0 +1,26 @@
+/* src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS for Flipping Cards */
+.perspective {
+    perspective: 1000px;
+  }
+  
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+/* Ensure hover effect works for flipping cards */
+.group:hover .rotate-y-180 {
+  transform: rotateY(180deg);
+}

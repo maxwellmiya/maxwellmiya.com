@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 900 680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="680" fill="#f9f9f9"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Power Automate Workflow Architecture</text>
+  
+  <!-- Document Management System -->
+  <rect x="50" y="80" width="250" height="240" fill="#e6f2ff" stroke="#2e75b6" stroke-width="2" rx="10"/>
+  <text x="175" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e75b6">Document Management System</text>
+  
+  <!-- Document Management Flow -->
+  <rect x="70" y="130" width="210" height="170" fill="#ffffff" stroke="#aad1f0" stroke-width="1" rx="5"/>
+  <text x="175" y="150" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Workflow</text>
+  
+  <!-- Document Flow Steps -->
+  <rect x="80" y="160" width="190" height="30" fill="#deebf7" stroke="#9cc3e5" stroke-width="1" rx="3"/>
+  <text x="175" y="180" font-family="Arial" font-size="12" text-anchor="middle">Document Upload & Validation</text>
+  
+  <rect x="80" y="195" width="190" height="30" fill="#deebf7" stroke="#9cc3e5" stroke-width="1" rx="3"/>
+  <text x="175" y="215" font-family="Arial" font-size="12" text-anchor="middle">Version Control & Routing</text>
+  
+  <rect x="80" y="230" width="190" height="30" fill="#deebf7" stroke="#9cc3e5" stroke-width="1" rx="3"/>
+  <text x="175" y="250" font-family="Arial" font-size="12" text-anchor="middle">Approval Processing</text>
+  
+  <rect x="80" y="265" width="190" height="30" fill="#deebf7" stroke="#9cc3e5" stroke-width="1" rx="3"/>
+  <text x="175" y="285" font-family="Arial" font-size="12" text-anchor="middle">Notification & Status Updates</text>
+  
+  <!-- Funds Requisition System -->
+  <rect x="325" y="80" width="250" height="240" fill="#ebf5e9" stroke="#548235" stroke-width="2" rx="10"/>
+  <text x="450" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#548235">Funds Requisition System</text>
+  
+  <!-- Funds Requisition Flow -->
+  <rect x="345" y="130" width="210" height="170" fill="#ffffff" stroke="#a8d08d" stroke-width="1" rx="5"/>
+  <text x="450" y="150" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Workflow</text>
+  
+  <!-- Funds Flow Steps -->
+  <rect x="355" y="160" width="190" height="30" fill="#e2efd9" stroke="#a8d08d" stroke-width="1" rx="3"/>
+  <text x="450" y="180" font-family="Arial" font-size="12" text-anchor="middle">Request Submission</text>
+  
+  <rect x="355" y="195" width="190" height="30" fill="#e2efd9" stroke="#a8d08d" stroke-width="1" rx="3"/>
+  <text x="450" y="215" font-family="Arial" font-size="12" text-anchor="middle">Conditional Approval Routing</text>
+  
+  <rect x="355" y="230" width="190" height="30" fill="#e2efd9" stroke="#a8d08d" stroke-width="1" rx="3"/>
+  <text x="450" y="250" font-family="Arial" font-size="12" text-anchor="middle">Multi-stage Authorization</text>
+  
+  <rect x="355" y="265" width="190" height="30" fill="#e2efd9" stroke="#a8d08d" stroke-width="1" rx="3"/>
+  <text x="450" y="285" font-family="Arial" font-size="12" text-anchor="middle">Fulfillment & Record Update</text>
+  
+  <!-- Audit Tracking System -->
+  <rect x="600" y="80" width="250" height="240" fill="#fcf0e6" stroke="#c55a11" stroke-width="2" rx="10"/>
+  <text x="725" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#c55a11">Audit Tracking System</text>
+  
+  <!-- Audit Tracking Flow -->
+  <rect x="620" y="130" width="210" height="170" fill="#ffffff" stroke="#f5ba8e" stroke-width="1" rx="5"/>
+  <text x="725" y="150" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Workflow</text>
+  
+  <!-- Audit Flow Steps -->
+  <rect x="630" y="160" width="190" height="30" fill="#fce5d5" stroke="#f5ba8e" stroke-width="1" rx="3"/>
+  <text x="725" y="180" font-family="Arial" font-size="12" text-anchor="middle">Finding Registration & Risk Assessment</text>
+  
+  <rect x="630" y="195" width="190" height="30" fill="#fce5d5" stroke="#f5ba8e" stroke-width="1" rx="3"/>
+  <text x="725" y="215" font-family="Arial" font-size="12" text-anchor="middle">Remediation Assignment</text>
+  
+  <rect x="630" y="230" width="190" height="30" fill="#fce5d5" stroke="#f5ba8e" stroke-width="1" rx="3"/>
+  <text x="725" y="250" font-family="Arial" font-size="12" text-anchor="middle">Deadline Management</text>
+  
+  <rect x="630" y="265" width="190" height="30" fill="#fce5d5" stroke="#f5ba8e" stroke-width="1" rx="3"/>
+  <text x="725" y="285" font-family="Arial" font-size="12" text-anchor="middle">Teams Notifications & Reporting</text>
+  
+  <!-- Integration Section -->
+  <rect x="50" y="350" width="800" height="150" fill="#f2f2f2" stroke="#7f7f7f" stroke-width="2" rx="10"/>
+  <text x="450" y="380" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#7f7f7f">Integration Architecture</text>
+  
+  <!-- Integration Components -->
+  <rect x="80" y="400" width="220" height="80" fill="#ffffff" stroke="#d9d9d9" stroke-width="1" rx="5"/>
+  <text x="190" y="420" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Cross-System Connections</text>
+  <text x="190" y="440" font-family="Arial" font-size="12" text-anchor="middle">Document-to-Audit Integration</text>
+  <text x="190" y="460" font-family="Arial" font-size="12" text-anchor="middle">Funds-to-Document Integration</text>
+  
+  <rect x="340" y="400" width="220" height="80" fill="#ffffff" stroke="#d9d9d9" stroke-width="1" rx="5"/>
+  <text x="450" y="420" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Common Flow Components</text>
+  <text x="450" y="440" font-family="Arial" font-size="12" text-anchor="middle">Error Handling Framework</text>
+  <text x="450" y="460" font-family="Arial" font-size="12" text-anchor="middle">Audit Trail System</text>
+  
+  <rect x="600" y="400" width="220" height="80" fill="#ffffff" stroke="#d9d9d9" stroke-width="1" rx="5"/>
+  <text x="710" y="420" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Teams Integration</text>
+  <text x="710" y="440" font-family="Arial" font-size="12" text-anchor="middle">Adaptive Cards & Notifications</text>
+  <text x="710" y="460" font-family="Arial" font-size="12" text-anchor="middle">Real-time Status Dashboard</text>
+  
+  <!-- SharePoint Foundation -->
+  <rect x="50" y="530" width="800" height="100" fill="#dae3f3" stroke="#4472c4" stroke-width="2" rx="10"/>
+  <text x="450" y="560" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#4472c4">SharePoint Foundation</text>
+  
+  <!-- SharePoint Components -->
+  <rect x="80" y="580" width="220" height="35" fill="#ffffff" stroke="#b4c7e7" stroke-width="1" rx="5"/>
+  <text x="190" y="603" font-family="Arial" font-size="12" text-anchor="middle">Document Libraries & Metadata</text>
+  
+  <rect x="340" y="580" width="220" height="35" fill="#ffffff" stroke="#b4c7e7" stroke-width="1" rx="5"/>
+  <text x="450" y="603" font-family="Arial" font-size="12" text-anchor="middle">Custom Lists & Forms</text>
+  
+  <rect x="600" y="580" width="220" height="35" fill="#ffffff" stroke="#b4c7e7" stroke-width="1" rx="5"/>
+  <text x="710" y="603" font-family="Arial" font-size="12" text-anchor="middle">Content Types & Policies</text>
+  
+  <!-- Connection Lines -->
+  <!-- Document to Integration -->
+  <path d="M175,320 L175,350" stroke="#2e75b6" stroke-width="2" fill="none"/>
+  <!-- Funds to Integration -->
+  <path d="M450,320 L450,350" stroke="#548235" stroke-width="2" fill="none"/>
+  <!-- Audit to Integration -->
+  <path d="M725,320 L725,350" stroke="#c55a11" stroke-width="2" fill="none"/>
+  <!-- Integration to SharePoint -->
+  <path d="M450,500 L450,530" stroke="#7f7f7f" stroke-width="2" fill="none"/>
+  
+  <!-- Cross System Connection Lines -->
+  <path d="M270,200 C300,200 300,250 600,250" stroke="#2e75b6" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+  <path d="M440,200 C470,200 470,215 600,215" stroke="#548235" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+</svg>
