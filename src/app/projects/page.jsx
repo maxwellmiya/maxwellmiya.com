@@ -325,13 +325,13 @@ export default function Projects() {
               {
                 quote: "Maxwell's approach to systems architecture harmonizes technical excellence with a deep understanding of human needs. The result was a solution that not only met our technical requirements but transformed how our teams collaborate.",
                 author: "Leonard Nawiri",
-                title: "MD, Ethicl Trade Services Africa",
+                title: "MD, Ethical Trade Services Africa",
                 image: "/api/placeholder/60/60"
               },
               {
                 quote: "Working with Maxwell was a revelation. His ability to see beyond the immediate technical challenges to create a cohesive, forward-thinking architecture has revolutionized our operations and given us a competitive edge.",
-                author: "Erica Moraa",
-                title: "Head, Finance & Admin, SIlentnight.",
+                author: "Thomas Mwandi",
+                title: "Finance Manager, Silentnight.",
                 image: "/api/placeholder/60/60"
               },
             ].map((testimonial, index) => (
