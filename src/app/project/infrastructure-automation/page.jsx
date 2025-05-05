@@ -70,7 +70,7 @@ export default function InfrastructureAutomation() {
                 <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
               </svg>
             </div>
-            <h3 className="font-bold text-xl mb-2">200+ Scripts</h3>
+            <h3 className="font-bold text-xl mb-2">50+ Scripts</h3>
             <p className="text-gray-600">Developed for various workflows</p>
           </div>
 
@@ -204,7 +204,7 @@ export default function InfrastructureAutomation() {
                 <ul className="space-y-2 text-sm">
                   <li className="flex justify-between">
                     <span>Scripts Developed:</span> 
-                    <span className="font-semibold">200+ PowerShell/Ansible</span>
+                    <span className="font-semibold">50+ PowerShell/Ansible</span>
                   </li>
                   <li className="flex justify-between">
                     <span>Environments Covered:</span> 
@@ -216,7 +216,7 @@ export default function InfrastructureAutomation() {
                   </li>
                   <li className="flex justify-between">
                     <span>Execution Frequency:</span> 
-                    <span className="font-semibold">500+ automated runs weekly</span>
+                    <span className="font-semibold">20+ automated runs weekly</span>
                   </li>
                 </ul>
               </div>

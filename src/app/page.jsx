@@ -203,7 +203,7 @@ export default function Home() {
               {
                 title: "Infrastructure Automation",
                 description: "Crafting self-healing systems that reduce complexity and increase reliability.",
-                impact: "25%+ efficiency gain",
+                impact: "55%+ efficiency gain",
                 link: "/project/infrastructure-automation",
                 icon: "⚡",
                 category: "Automation"
