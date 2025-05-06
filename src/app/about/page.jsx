@@ -30,10 +30,10 @@ export default function Home() {
       icon: Rocket
     },
     { 
-      date: "2022 - 2023", 
+      date: "2022 - 2025", 
       title: "Accelerated Learning", 
       role: "Remote Support", 
-      company: "Deepening technical skills across varied client infrastructures (Azure, M365, Hybrid) and honing rapid troubleshooting abilities at Preeminent Technology MSP US as Systems Administrator L1.",
+      company: "Deepening technical skills across varied client infrastructures (Azure, M365, Hybrid, Google) and honing rapid troubleshooting abilities at Preeminent Technology MSP US as Systems Administrator L1.",
       icon: Lightbulb
     },
     { 
