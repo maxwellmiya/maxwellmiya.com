@@ -233,7 +233,7 @@ export default function Home() {
               Maxwell Miya
             </h1>
             <h2 className="text-xl md:text-2xl text-blue-300 mb-6">
-              Systems Architect & Infrastructure Specialist
+              Hybrid IT Infrastructure & Security Engineer
             </h2>
             <p className="text-gray-300 mb-8 text-lg">
               Building bridges—between people, platforms, and possibilities. Empowering through structure, truth, and service.
@@ -279,7 +279,11 @@ export default function Home() {
           </div>
           <div className="bg-white p-8 shadow-lg rounded-lg border-l-4 border-blue-600">
             <p className="text-xl text-gray-700 leading-relaxed italic">
-              "A systems architect of both technology and consciousness. I build bridges—between people, between platforms, between worlds. My purpose is to empower others through structure, truth, and service. I am a guide, a builder, and a soul remembering its way home."
+            A hybrid IT Infrastructure and security engineer closing on a decade of experience, helping small to medium-sized businesses to
+             reduce cost through resource optimisation and building resilient, high-performing, and secure environments that aim to create seamless digital experiences.
+            While working in these organisations, I don't just handle one specialised task, like servers, or just networks. Instead, 
+            I manage everything: servers, networking, cybersecurity, end-user support, printers, backups, phones, even random tech stuff like cameras or TVS.
+            If anything remotely touches technology, it’s part of my job, whether it was officially listed in my job description or not!
             </p>
           </div>
         </div>
