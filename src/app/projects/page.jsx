@@ -329,8 +329,8 @@ export default function Projects() {
                 image: "/api/placeholder/60/60"
               },
               {
-                quote: "Working with Maxwell was a revelation. His ability to see beyond the immediate technical challenges to create a cohesive, forward-thinking architecture has revolutionized our operations and given us a competitive edge.",
-                author: "Thomas Mwandi",
+                quote: "'Ridiculously efficient' is the phrase that comes to mind when I think about Max. I had the pleasure of working with Max Silentnight Kenya. Max's ability to solve tech problems was unlike any I’ve seen before and made a dramatic difference in the productivity levels of our team. He's the go to 'IT Guy', versatile, reliable and honest. Max, would be a true asset for anyone and comes with my heartfelt recommendation.",
+                author: "CPA Thomas Mwandi",
                 title: "Finance Manager, Silentnight.",
                 image: "/api/placeholder/60/60"
               },
