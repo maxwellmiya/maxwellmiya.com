@@ -133,6 +133,23 @@ export default function Home() {
     }
   ];
 
+  // Memberships and affiliations data
+  const memberships = [
+    {
+      logo: "/images/AWSEBadge.png",
+      name: "AWS Emerging Talent Community",
+      issuer: "AWS",
+      year: "Member"
+    },
+    
+    {
+      logo: "/images/acpk.jpeg",
+      name: "Association of Computing Practitioners - Kenya",
+      issuer: "ACPK",
+      year: "Member"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       {/* Header/Navigation - Now with responsive design */}
@@ -511,6 +528,47 @@ export default function Home() {
                     <p className="text-gray-600 text-sm">{cert.issuer}</p>
                     <span className="text-gray-400 text-xs whitespace-nowrap ml-2">
                       {cert.year}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Memberships and Affiliations */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Memberships & Affiliations</h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Active participation in professional communities that keep me at the forefront of industry trends and best practices.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {memberships.map((membership, index) => (
+              <div 
+                key={index} 
+                className="flex items-start bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="flex-shrink-0 mr-4">
+                  <img 
+                    src={membership.logo} 
+                    alt={`${membership.issuer} Logo`} 
+                    className="h-12 w-12 object-contain p-1 border border-gray-200 rounded"
+                  />
+                </div>
+                <div className="flex-1 overflow-hidden">
+                  <h3 className="text-lg font-semibold text-gray-900 break-words">
+                    {membership.name}
+                  </h3>
+                  <div className="flex justify-between items-baseline mt-1">
+                    <p className="text-gray-600 text-sm">{membership.issuer}</p>
+                    <span className="text-gray-400 text-xs whitespace-nowrap ml-2">
+                      {membership.year}
                     </span>
                   </div>
                 </div>
